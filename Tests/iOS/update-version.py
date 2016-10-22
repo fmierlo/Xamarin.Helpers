@@ -5,7 +5,7 @@ def log(msg):
     sys.stderr.write(msg + '\n')
 
 class Project:
-    Filename = 'Helpers.UITests.iOS.csproj'
+    Filename = 'Tests.iOS.csproj'
     Schema = '{http://schemas.microsoft.com/developer/msbuild/2003}'
     RootTag = Schema + 'Project'
     Property = Schema + 'PropertyGroup'
