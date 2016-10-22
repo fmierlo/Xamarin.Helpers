@@ -50,6 +50,18 @@
       <Project>{8DF661B5-729F-4EAE-8A1D-E30F171FD794}</Project>
       <Name>Helpers</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Helpers.UITests.iOS\Helpers.UITests.iOS.csproj">
+      <Project>{D3AF6111-F74E-4C04-A413-021BB982ACCD}</Project>
+      <Name>Helpers.UITests.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpers.UITests.Droid\Helpers.UITests.Droid.csproj">
+      <Project>{0E699846-6881-46E7-B792-619B455352CB}</Project>
+      <Name>Helpers.UITests.Droid</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Properties\" />
