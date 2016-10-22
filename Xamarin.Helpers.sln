@@ -1,0 +1,29 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers", "Helpers\Helpers.csproj", "{8DF661B5-729F-4EAE-8A1D-E30F171FD794}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers.iOS", "Helpers.iOS\Helpers.iOS.csproj", "{D54A8404-EABC-4059-851D-8FB84BD10966}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helpers.Droid", "Helpers.Droid\Helpers.Droid.csproj", "{168906A3-CD2B-4000-A378-C2DE1D444948}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8DF661B5-729F-4EAE-8A1D-E30F171FD794}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DF661B5-729F-4EAE-8A1D-E30F171FD794}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DF661B5-729F-4EAE-8A1D-E30F171FD794}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DF661B5-729F-4EAE-8A1D-E30F171FD794}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D54A8404-EABC-4059-851D-8FB84BD10966}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D54A8404-EABC-4059-851D-8FB84BD10966}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D54A8404-EABC-4059-851D-8FB84BD10966}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D54A8404-EABC-4059-851D-8FB84BD10966}.Release|Any CPU.Build.0 = Release|Any CPU
+		{168906A3-CD2B-4000-A378-C2DE1D444948}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{168906A3-CD2B-4000-A378-C2DE1D444948}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{168906A3-CD2B-4000-A378-C2DE1D444948}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{168906A3-CD2B-4000-A378-C2DE1D444948}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
