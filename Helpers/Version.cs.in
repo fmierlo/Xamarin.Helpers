@@ -1,0 +1,8 @@
+﻿namespace Helpers
+{
+    public static class Version
+    {
+        public const string Name = "{VersionName}";
+        public const string Package = "{PackageName}";
+    }
+}

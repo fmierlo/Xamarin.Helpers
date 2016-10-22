@@ -9,6 +9,8 @@
     <RootNamespace>Helpers.UITests.iOS</RootNamespace>
     <AssemblyName>Helpers.UITests.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <ReleaseVersion>0.1.0</ReleaseVersion>
+    <Description>org.n42.xamarin.helpers</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
     <DebugSymbols>true</DebugSymbols>
@@ -95,10 +97,21 @@
   <ItemGroup>
     <None Include="Info.plist" />
     <None Include="Entitlements.plist" />
+    <None Include="update-version.py" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="UnitTestAppDelegate.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Helpers\Helpers.csproj">
+      <Project>{8DF661B5-729F-4EAE-8A1D-E30F171FD794}</Project>
+      <Name>Helpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Helpers.iOS\Helpers.iOS.csproj">
+      <Project>{D54A8404-EABC-4059-851D-8FB84BD10966}</Project>
+      <Name>Helpers.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
