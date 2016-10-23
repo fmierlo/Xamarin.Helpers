@@ -8,10 +8,9 @@ namespace Helpers
         1. Droid/MainActivity.cs
             -   Add: Label = Constants.Product
         2. Droid/Properties/AndroidManifest.xml
-            -   Remove: application:android:label="Project.Droid"
+            -   Remove: <application android:label="Project.Droid"></application>
         3. Droid/Properties/AssemblyInfo.cs
-            -   Add: using Project;
-            -   Add: [assembly: Application(Label=Constants.Product)]
+            -   Add: [assembly: Application(Label=Project.Constants.Product)]
 
         ## iOS Application Name ##
 
@@ -19,10 +18,8 @@ namespace Helpers
 
         ## Version ##
 
-            1.  Add the follow Before Build custom command in all projects
-                -   Command: python Script/pre-build.py
-                -   Working: ${ProjectDir}
-            2.  Increment version number in Solution Options -> Main Settings
+            1.  Increment version number in Solution Options -> Main Settings
+            2.  Run ``bash update-version.sh`` in the root folder
 
         # Package #
 
@@ -61,21 +58,15 @@ namespace Helpers
         public const string FileVersion = Version.Name;
         public const string Package = Version.Package;
 
-        /* public static string HockeyAppIdAndroid = "55126a6f69584506bb6123736662339c";
-        public static string HockeyAppIdiOS = "b44f715683ff4fc89691db096ace790d";
+        public static string HockeyAppIdAndroid = "";
+        public static string HockeyAppIdiOS = "";
         public static bool HockeyAppEnabled = true;
         public static bool HockeyAppMetricsEnabled = true;
-        public static bool HockeyAppUpdateEnabled = false; */
+        public static bool HockeyAppUpdateEnabled = false;
 
-        // public static string DatabaseName = "helpers.db3";
+        public static string DatabaseName = "helpers.db3";
 
 #if DEBUG
-        /* public static SignUp DefaultSignUp = new SignUp {
-            Name = "Debug User",
-            Email = "debug@helpers",
-            Phone = "+555198765432",
-            Password = "debug"
-        }; */
         public static bool Development = true;
 #else
         public static bool Development = false;
